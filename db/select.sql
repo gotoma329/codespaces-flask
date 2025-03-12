@@ -2,4 +2,5 @@
 -- select * from schools;
 
 -- 生徒テーブルからすべてのデータを抽出する
-select * from students;
+SELECT name, gender, school_name FROM students 
+LEFT JOIN schools ON students.school_id = schools.school_id;
